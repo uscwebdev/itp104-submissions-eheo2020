@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Lab 05 | Form Page </title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Order Your Pizza</h1>
+    <form action="confirmation.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Ellie Heo" required><br><br>
+        
+        <label>Size:</label><br>
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label><br><br>
+        
+        <label>Toppings (select at least one):</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        
+        <input type="checkbox" id="olives" name="toppings[]" value="Olives">
+        <label for="olives">Olives</label><br><br>
+        
+        <label for="crust">Crust:</label>
+        <select id="crust" name="crust">
+            <option value="Thin">Thin</option>
+            <option value="Thick">Thick</option>
+            <option value="Stuffed">Stuffed</option>
+        </select><br><br>
+        
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Any special instructions..." rows="4" cols="50"></textarea><br><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the Terms & Conditions</label><br><br>
+        
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>
