@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Assignment 04 | Calendar </title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .calendar-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-image: url('img/header-background.jpg'); 
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .day-header {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 50px; 
+            height: 50px;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 50px; /* Set a fixed width for calendar cells */
+            height: 50px; /* Set a fixed height for calendar cells */
+        }
+
+        .other-month {
+            color: #ccc;
+        }
+
+        .event {
+            background-color: #ffc107; /* Event cell background color */
+            font-weight: bold;
+        }
+
+        .birthday {
+            background-image: url('img/birthday.png'); /* Add your birthday background image */
+            background-size: cover;
+            color: rgb(255, 255, 255);
+        }
+
+        .korean-independence {
+            background-image: url('img/south-korea.jpeg'); /* Add South Korea's Independence Day background image */
+            background-size: cover;
+            color: white;
+        }
+
+        .white-day {
+            background-image: url('img/white-day.png'); /* Add Cesar Chavez Day background image */
+            background-size: cover;
+            color: white;
+        }
+
+        .highlight {
+            background-color: rgba(161, 161, 161, 0.618);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="calendar-container">
+        <header>
+            <h1>March 2023</h1>
+        </header>
+        <table class="calendar">
+            <tr>
+                <th class="day-header">Sun</th>
+                <th class="day-header">Mon</th>
+                <th class="day-header">Tue</th>
+                <th class="day-header">Wed</th>
+                <th class="day-header">Thu</th>
+                <th class="day-header">Fri</th>
+                <th class="day-header">Sat</th>
+            </tr>
+            <tr>
+                <td class="other-month">27</td>
+                <td class="other-month">28</td>
+                <td class="event korean-independence">1 <p class="highlight">Korean Independence Movement Day</p> </td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td> 
+            </tr>
+            <tr>
+                <td>13</td> 
+                <td class="event white-day">14 <p class="highlight">White Day</p></td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td class="event birthday">26 <p class="highlight">My Birthday</p></td> 
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
