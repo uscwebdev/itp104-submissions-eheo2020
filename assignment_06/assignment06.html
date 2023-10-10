@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+    <title> Assignment 6  </title>
+
+
+    <style>
+    
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    #header {
+        background-image: url('https://wallpapers.com/images/hd/chic-lady-performing-pilates-0o58uw129w3y0wkr.jpg');
+        background-size: cover;
+        height: 600px;
+        text-align: center;
+        padding: 100px 0;
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    #wrapper {
+        display: flex;
+        width: 813px;
+                margin-left: auto;
+                margin-right: auto;
+    }
+
+    #main-section {
+        width: 600px;
+        padding-left:16px;
+        padding-right: 16px;
+
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #sidebar {
+        background-color: bisque;
+                width: 150px;
+                padding: 16px;
+                padding-top: 30px
+    }
+
+    .history_img {
+        width: 200px;
+        float: right;
+        height:auto;
+        padding: 10px;
+
+    }
+
+    .effectiveness_img {
+        width: 200px;
+        float: left;
+        height:auto;
+        padding: 10px;
+
+    }
+
+    .comparison_img {
+        width: 200px;
+        float: right;
+        height:auto;
+        padding: 10px;
+
+    }
+
+    #footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8em;
+    }
+
+     .gallery-item {
+                width: 300px;
+                height: 300px;
+                margin: 10px;
+                background-color: #f9f9f9; 
+                border: 2px solid #ddd; 
+                display: inline-block;
+                vertical-align: top;
+            }
+
+    /* Sidebar styles */
+
+        .img-container
+        {
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
+        .img-container {
+			background-color: #CCC;
+			margin: 10px;
+			width: 120px;
+			height: 120px;
+			overflow: hidden;
+			position: relative;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			/* background-color: #000; */
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 100px;
+
+			visibility: hidden;
+
+			/* display: flex;
+			align-items: center;
+			justify-content: center; */
+
+			/* opacity: 0.5; */
+		}
+		.img-container:hover > .overlay {
+			visibility: visible;
+		}
+		.img-container > img {
+			/* width: 100%;
+			height: auto; */
+			height: 100%;
+			width: auto;
+			/* position: relative; */
+			/* top: 100px; */
+			/* left: 100px; */
+			/* right: 70px; */
+		}
+		.img-container > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+
+
+
+    /* Navigation styles */
+            #navbar {
+                background-color: #a4a4a4;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #navbar ul {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		    }
+
+            #navbar li {
+                width: 180px;
+                text-align: center;
+                position: relative;
+            }
+
+            #top-menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            #navbar li:hover {
+                text-decoration: underline; 
+            }
+
+            #navbar a {
+                color: rgb(69, 69, 69);
+                text-decoration: none;
+                margin: 0 10px;
+                display: block;
+            }
+
+            #top-menu ul {
+			position: absolute;
+			display: none;
+		    }
+
+            #sub-menu ul {
+                
+                top: 0px;
+                left: 180px;
+            }
+
+            #navbar li:hover > ul {
+                display: block;
+            }
+
+
+    /* Gallery section styles */
+        #gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .block {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .block:nth-child(1) {
+            width: 300px;
+            height: 300px;
+        }
+
+        .block:nth-child(2) {
+            width: 150px;
+            height: 300px;
+        }
+
+        .block:nth-child(3) {
+            width: 300px;
+            height: 150px;
+        }
+
+        .block:nth-child(4) {
+            width: 150px;
+            height: 150px;
+        }
+
+        .block:nth-child(5) {
+            width: 250px;
+            height: 200px;
+        }
+
+        .block:nth-child(6) {
+            width: 200px;
+            height: 250px;
+        }
+
+        .block:nth-child(7) {
+            width: 250px;
+            height: 250px;
+        }
+
+        .block:nth-child(8) {
+            width: 180px;
+            height: 220px;
+        }
+
+        .block:nth-child(9) {
+            width: 220px;
+            height: 180px;
+        }
+
+        .block:nth-child(10) {
+            width: 190px;
+            height: 190px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <body>
+        <div id="header">
+               <h1>Pilates</h1>
+           </div>
+   
+    <div id="navbar">
+		<ul id="top-menu">
+           
+            <li><a id="highlight-nav" href="assignment06.html#main-section">Home</a>
+                <ul id="sub-menu">
+                    <li><a href="">Sub-menu 1</a></li>
+					<li><a href="">Sub-menu 2</a></li>
+                </ul>
+            </li>
+
+            <li><a href="assignment06.html#gallery-section">Gallery</a></li>
+    </div>
+
+    <div id="wrapper">
+
+       <div id="main-section"> 
+   
+               <h2>History</h2>
+                   <p> 
+                    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/99515/images/132ur4TfQFSb3185TWNX_joe-pilates-workshop-lineage-pilates500x300.jpg" class="history_img"></p>
+                   
+                    <p>Pilates was developed by Joseph Pilates from Mönchengladbach, Germany. His father was a gymnast and his mother a naturopath.
+                       During the first half of the twentieth century, Pilates developed a system of exercises while interned during WWI intended to strengthen the human mind and body, believing that mental and physical health were interrelated.</p>
+                    
+                    <p>In his youth, he practiced many of the physical training regimens available in Germany, and it was from these he developed his own method. It has clear connections with the physical culture of the late nineteenth century, such as the use of special apparatuses, and claims that the exercises could cure ill health. It is also related to the tradition of "corrective exercise" or "medical gymnastics" as typified by Pehr Henrik Ling. </p>
+                   
+                    <p>Pilates said that the inspiration for his method came to him during World War I, while he was being held at the Knockaloe internment camp on the Isle of Man.[9] He spent four years there developing his method, working on his fellow internees. </p>
+                   
+                    <p> For more information about Joseph Pilates, visit <a href="https://www.pilatesfoundation.com/pilates/the-history-of-pilates/"> PilatesFoundation.com. </a> </p>
+   
+               <h2>Effectiveness</h2>
+                   <p><img src="https://formandmovement.com/wp-content/uploads/2019/08/8039804-scaled.jpg" class="effectiveness_img"></p>
+                   <p>In 2015 the Australian Government's Department of Health published a meta study which reviewed the existing literature on 17 alternative therapies, including Pilates, to determine whether any were suitable for being covered by health insurance. The review found that due to the small number and methodologically limited nature of the existing studies, the effectiveness of Pilates was uncertain. Accordingly, in 2017, the Australian government named it a practice that would not qualify for insurance subsidy, saying this step would "ensure taxpayer funds are expended appropriately and not directed to therapies lacking evidence".
+                   <p>For the treatment of lower back pain, low-quality evidence suggests that while Pilates is better than doing nothing, it is no more effective than other forms of physical exercise. There is some evidence that regular sessions can help condition the abdominal muscles of healthy people, when compared to doing no exercise. There is no good evidence that it helps improve balance in elderly people.
+                   </p>
+   
+               <h2>Comparison with Yoga</h2>
+                   <p><img src="https://c4.wallpaperflare.com/wallpaper/703/841/205/black-and-white-workout-class-pilates-wallpaper-preview.jpg" class="comparison_img"></p>
+                   <p>Modern yoga, like Pilates, is a mind-and-body discipline, though yoga classes are more likely to address spiritual aspects explicitly. Some poses are similar in the two disciplines; for example, open leg balance closely resembles Navasana (boat pose); roll over is similar to Halasana (plough pose); and swan and push-up are essentially identical to Bhujangasana (cobra pose) and Chaturanga Dandasana (low plank pose). Both disciplines develop strength, flexibility and fitness. Pilates, however, emphasises core strength where yoga emphasizes flexibility.
+                   <p>In October 2000 "Pilates" was ruled a generic term by a U.S. federal court, making it free for unrestricted use. The term is still capitalized in writing due to its origin from the proper name of the method's founder. As a result of the court ruling, the Pilates Method Alliance was formed as a professional association for the Pilates community. Its purpose was to provide an international organization to connect teachers, teacher trainers, studios, and facilities dedicated to preserving and enhancing the legacy of Joseph H. Pilates and his exercise method by establishing standards, encouraging unity, and promoting professionalism.
+                   </p>
+                   </p>
+        </div> <!-- #main -->
+
+
+        <div id="sidebar">
+            
+            <div id="thumbnail">
+
+			<div class="img-container">
+                   <img src="https://images.ctfassets.net/drib7o8rcbyf/6VmJ1FA6XT4awAWAygJ5XN/a6aec981f94d34e54f3b0745d263e33d/DT_about_pilates_1-min.jpg?fit=fill&fl=progressive&fm=jpg&h=1160&q=45&w=900" 
+                   alt="Pilates 1">
+                   <div class="overlay">Pilates 1</div>
+                   </div><!--img-container--> 
+
+            <div class="img-container">
+                   <img src="https://dynamicphysio.co.nz/wp-content/uploads/2019/08/2484.jpg" 
+                   alt = "Pilates 2">
+                   <div class="overlay">Pilates 2</div>
+                </div><!--img-container--> 
+
+
+             <div class="img-container">
+                   <img src="https://upgradepilates.com/wp-content/uploads/2022/08/848A5371-scaled.jpg" 
+                   alt ="Pilates 3">
+                   <div class="overlay">Pilates 3</div>
+                </div><!--img-container--> 
+
+            <div class="img-container">
+                   <img src="https://upgradepilates.com/wp-content/uploads/2022/08/848A4811-scaled.jpg" 
+                   alt ="Pilates 4">
+                   <div class="overlay">Pilates 4</div>
+                </div><!--img-container--> 
+
+        </div> <!-- #thumbnails -->
+
+        </div> <!-- #sidebar -->
+
+        </div> <!-- #wrapper -->
+
+        
+    <div id="gallery-section"> 
+
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+        <div class="block">4</div>
+        <div class="block">5</div>
+        <div class="block">6</div>
+        <div class="block">7</div>
+        <div class="block">8</div>
+        <div class="block">9</div>
+        <div class="block">10</div>
+ 
+
+    </div> <!-- #gallery-section -->
+
+      
+   <div id="footer">
+               <p>&copy; Fall23 ITP Interest Page</p>
+   </div>
+
+
+</body>
+</html>
