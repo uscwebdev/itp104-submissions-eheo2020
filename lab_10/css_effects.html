@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Transitions, Translation</title>
+	<title>CSS Effects</title>
 	
     <style>
-body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            text-align: center;
         }
 
-        .container {
-            position: relative;
-            overflow: hidden;
-            width: 300px;
-            height: 200px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        #main {
+            width: 1000px;
+            margin: auto;
+            margin-top:200px;
         }
 
-        .container img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
+        .img{
+                width: 200px;
+			    height: auto;
+                transition: all 2s ease;
+            }
+            #img2{
+                transform: translate(-170px) rotate(12deg);
+            }
+            #img3{
+                transform: translate(-330px) rotate(20deg);
+            }
+            #main:hover #img1{
+                transform: translate(-70px) rotate(-20deg) scale(1.2);
+            }
+            #main:hover #img2{
+                transform: translate(-10px, 30px) rotate(15deg) scale(1.2);
+            }
+            #main:hover #img3{
+                transform: translate(50px, 100px) rotate(30deg) scale(1.2);
+            }
 
-        .container:hover img {
-            transform: translate(10%, 10%);
-        }
-
-        .container img:hover {
-            transform: translate(0, 0);
-        }
     </style>
 </head>
 
 <body>
-
-    <div class="container">
-        <img class="bibimbap" src="imgs/bibimbap.png" alt="bibimbap">
-        <img class="tteokbokki" src="imgs/tteokbokki.png" alt="tteokbokki">
-        <img class="corndogs" src="imgs/corndogs.png" alt="corndogs">
+    <h1>Korean Foods</h1>
+    <div id="main">
+        <img class="img" id="img1"src="imgs/bibimbap.png" alt="bibimbap">
+        <img class="img" id="img2" src="imgs/tteokbokki.png" alt="tteokbokki">
+        <img class="img" id="img3" src="imgs/corndogs.png" alt="corndogs">
     </div>
 
 </body>
+</html>
