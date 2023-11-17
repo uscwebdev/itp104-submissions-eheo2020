@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture and Arts of Korea</title>
+    
+    <style>
+    body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background: lightgray;
+    padding: 15px;
+    }
+
+    .container img {
+    width: 100%;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 100ms ease-out;
+    }
+
+    .container img:hover {
+    transform: scale(1.04);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    }
+
+footer{
+    background-color: #222;
+    color: #fff;
+    padding:10px;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    width:100%
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Culture and Arts of Korea</h1>
+        <h2>UNESCO Heritage</h2>
+        <p> Korea’s vibrant cultural legacy, comprising music, art, literature, dance, architecture, clothing, and cuisine, offers a delightful combination of tradition and modernity. South Korea preserves a wealth of priceless cultural heritage, the majority of which have been inscribed on UNESCO’s World Heritage List to be protected for future generations.
+        </p>
+
+        <p>Since the earliest settlements during prehistoric times, the people of Korea have developed a unique culture based on their outstanding artistic sensibility. The geographical conditions of the peninsula provided Koreans with opportunities to receive both continental and maritime cultures and ample resources, thereby forming original cultures of interest to and value for the rest of humanity, both then and now. Korea’s vibrant cultural legacy, comprising music, art, literature, dance, architecture, clothing, and cuisine, offers a delightful combination of tradition and modernity.
+        </p>
+    </header>
+
+    <div class="container">
+        <img src=img/창덕궁.jpeg>
+        <img src="img/종묘shrine.jpeg">
+        <img src="img/석굴암.png">
+        <img src="img/불국사.png">
+        <img src="img/도산서원.png">
+        <img src="img/woodblocks.png">
+      </div>
+        
+      <footer>
+        UNESCO Heritage of Korea
+    </footer>
