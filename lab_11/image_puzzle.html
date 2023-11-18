@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> 07 | Image Puzzle </title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 class="title"> Samoyed Image Puzzle </h1>
+
+    <div id="puzzle">
+        <img src="imgs/row-1-column-1.png" alt="Image 1">
+        <img src="imgs/row-1-column-2.png" alt="Image 2">
+        <img src="imgs/row-1-column-3.png" alt="Image 3">
+        <img src="imgs/row-2-column-1.png" alt="Image 4">
+        <img src="imgs/row-2-column-2.png" alt="Image 5">
+        <img src="imgs/row-2-column-3.png" alt="Image 6">
+        <img src="imgs/row-3-column-1.png" alt="Image 7">
+        <img src="imgs/row-3-column-2.png" alt="Image 8">
+        <img src="imgs/row-3-column-3.png" alt="Image 9">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
+<script src="draggabilly.pkgd.min.js"></script>
+
+<script>
+    var $draggable = $('#puzzle img').draggabilly({})
+</script>
+
+</body>
