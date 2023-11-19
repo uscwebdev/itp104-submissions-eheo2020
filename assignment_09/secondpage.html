@@ -7,9 +7,13 @@
     
     <style>
 
+    @font-face {
+  src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: 'Open Sans', sans-serif;
+}
+
     #bodytext {
         margin: 20px;
-        font-family: Arial, sans-serif;
     }
 
     .container {
@@ -81,6 +85,12 @@ footer{
     margin-left: 300px;
 }
 
+#thumbnail {
+    width: 350px;
+    height: 350px;
+
+}
+
 #thumbnail + p{
 			text-align: center;
 			visibility: hidden;
@@ -119,27 +129,36 @@ footer{
 
         <div class="img-container">
             <img id="thumbnail" src=img/창덕궁.jpeg>
-            <p>caption</p>
+            <p> Changdeokgung </p>
         </div>
 
         <div class="img-container">
-            <img src="img/종묘.jpeg">
+            <img id="thumbnail" src="img/종묘.jpeg">
+            <p>Jongmyo</p>
         </div>
 
         <div class="img-container">
-            <img src="img/해인사.jpeg">
+            <img id="thumbnail" src="img/해인사.jpeg">
+            <p>Haeinsa Temple</p>
+
         </div>
 
         <div class="img-container">
-            <img src="img/선정릉.jpeg">
+            <img id="thumbnail" src="img/선정릉.jpeg">
+            <p>Royal Tombs of the Joseon dynasty</p>
+
         </div>
 
         <div class="img-container">
-            <img src="img/수원화성.jpeg">
+            <img id="thumbnail" src="img/수원화성.jpeg">
+            <p>Suwon Hwaseong Fortress</p>
+
         </div>
 
         <div class="img-container">
-            <img src="img/불국사.png">
+            <img id="thumbnail" src="img/석굴암.png">
+            <p>Seokguram Grotto</p>
+
         </div>
 
       </div> <!--container-->
