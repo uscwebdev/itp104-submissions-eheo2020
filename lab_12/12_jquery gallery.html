@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Lab 12 | JQuery Photo Gallery </title>
+
+    <style>
+
+        .gallery {
+            display: flex;
+            align-items: flex-start; 
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s;
+            width: 200px;
+			height: auto;
+			margin: 5px;
+        }
+
+        .img + p {
+            text-align: center;
+            visibility: hidden; 
+        }
+
+        .img:hover +p {
+            visibility: visible; 
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+
+        #container {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;            
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <h1> Samoyed Gallery </h1>
+
+    <div id="gallery">
+
+        <div class="gallery-item">
+            <img class="img" id="samoyed1" src="img/samoyed1.jpg">
+            <p>Baby Samoyed with tennis ball</p>
+        </div>
+
+        <div class="gallery-item">
+            <img class="img" id="samoyed2" src="img/samoyed2.jpg">
+            <p>Two Samoyed puppies<p>
+        </div>
+
+        <div class="gallery-item">
+            <img class="img" id="samoyed3" src="img/samoyed3.jpg">
+            <p>Adorable Samoyed with a playful expression<p>
+        </div>
+
+        <div class="gallery-item">
+            <img class="img" id="samoyed4" src="img/samoyed4.jpg">
+            <p>Two Samoyed friends taking a photo in the forest</p>
+        </div>
+
+        <div class="gallery-item">
+            <img class="img" id="samoyed5" src="img/samoyed5.png">
+            <p>Samoyed posing in a field of flowers<p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+        $('#samoyed1').click(function(){
+            $('#samoyed1').css('border','5px solid red');
+            $('#samoyed2').css('border','none');
+            $('#samoyed3').css('border','none');
+            $('#samoyed4').css('border','none');
+            $('#samoyed5').css('border','none');
+		});
+
+        $('#samoyed2').click(function(){
+            $('#samoyed1').css('border','none');
+            $('#samoyed2').css('border','5px solid red');
+            $('#samoyed3').css('border','none');
+            $('#samoyed4').css('border','none');
+            $('#samoyed5').css('border','none');
+		});
+
+        $('#samoyed3').click(function(){
+            $('#samoyed1').css('border','none');
+            $('#samoyed2').css('border','none');
+            $('#samoyed3').css('border','5px solid red');
+            $('#samoyed4').css('border','none');
+            $('#samoyed5').css('border','none');
+		});
+
+        $('#samoyed4').click(function(){
+            $('#samoyed1').css('border','none');
+            $('#samoyed2').css('border','none');
+            $('#samoyed3').css('border','none');
+            $('#samoyed4').css('border','5px solid red');
+            $('#samoyed5').css('border','none');
+		});
+
+        $('#samoyed5').click(function(){
+            $('#samoyed1').css('border','none');
+            $('#samoyed2').css('border','none');
+            $('#samoyed3').css('border','none');
+            $('#samoyed4').css('border','none');
+            $('#samoyed5').css('border','5px solid red');
+		});
+
+        </script>
+
+</body>
+</html>
+
