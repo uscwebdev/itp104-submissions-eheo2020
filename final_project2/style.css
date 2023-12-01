@@ -328,7 +328,7 @@ h3 {
 .sub-header1 {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.292),rgba(4,9,30,0.7)), url(img/창덕궁3.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.292),rgba(4,9,30,0.7)), url(img/chd3.jpeg);
     background-position: center;
     text-align: center;
     color: #fff;
@@ -394,7 +394,7 @@ h3 {
 .sub-header2 {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.292),rgba(4,9,30,0.7)), url(img/야경.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.292),rgba(4,9,30,0.7)), url(img/nightview.jpeg);
     background-position: center;
     text-align: center;
     color: #fff;
